@@ -124,29 +124,31 @@ src/
 
 ---
 
+네! 현업 표준에 맞춰 브랜치 전략을 수정하겠습니다.
+
 ## 🌿 GitHub 브랜치 전략
 
 이 프로젝트는 혼자 개발하지만 **팀 협업 수준의 코드 관리 체계**를 유지하기 위해
 PR 기반의 브랜치 전략을 사용합니다.
 
-* 모든 작업은 `experiment/` 브랜치에서 시작하며,
+* 모든 작업은 `feature/` 브랜치에서 시작하며,
   **Draft PR → Self Review → Rebase Merge → main** 흐름으로 관리됩니다.
 * `main` 브랜치는 항상 **배포 가능한 상태**를 유지하고,
   **Rebase Merge** 방식을 통해 깔끔한 linear 이력을 보장합니다.
 
 **브랜치 구조**
 
-* `main`: 안정적 배포 및 실험 통합 브랜치
-* `experiment/*`: React 개념별 실험 단위 브랜치 (예: `experiment/suspense-fallback`)
-* `fix/*`: 버그 수정용 단기 브랜치
+* `main`: 안정적 배포 및 기능 통합 브랜치
+* `feature/*`: 기능 개발 및 실험 단위 브랜치 (예: `feature/declarative-rendering`, `feature/routing-system`)
+* `hotfix/*`: 긴급 수정 및 버그 해결용 단기 브랜치
 
 **커밋 규칙**
 
 * [Conventional Commits](https://www.conventionalcommits.org/) 규칙 준수
   예)
 
-  * `feat: Suspense fallback 추가`
-  * `fix: 탭 전환 시 상태 초기화 버그 수정`
+  * `feat: Declarative Rendering 실험 추가`
+  * `fix: 라우팅 전환 시 상태 초기화 버그 수정`
   * `docs: Headless 컴포넌트 설명 추가`
   * `refactor: 코드 구조 개선 (기능 변경 없음)`
   * `chore: 설정, 빌드, 의존성 등 관리성 작업`
@@ -163,6 +165,7 @@ Lint / Test / Build 체크 후 `main` 병합 시 자동 검증을 수행할 예�
 **참고 문서:**
 [Git 공식 문서](https://git-scm.com/doc) · [GitHub Docs](https://docs.github.com/) · [React Docs](https://react.dev/)
 
+---
 
 
 ## 🧪 실험 주제
