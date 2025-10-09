@@ -1,0 +1,54 @@
+name: 🐛 버그 리포트
+description: 버그를 발견했을 때 사용합니다.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: 버그 설명
+      description: 어떤 버그인가요?
+      placeholder: "예: 버튼 클릭 시 페이지가 깨짐"
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: 재현 단계
+      description: 버그를 재현하는 방법을 알려주세요.
+      placeholder: |
+        1. 홈페이지로 이동
+        2. 버튼 클릭
+        3. 오류 발생
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 예상 동작
+      description: 정상적으로 동작했을 때 어떻게 되어야 하나요?
+      placeholder: "예: 버튼 클릭 시 다음 페이지로 이동"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: 브라우저
+      description: 사용 중인 브라우저를 선택해주세요.
+      options:
+        - Chrome
+        - Safari
+        - Firefox
+        - Edge
+        - 기타
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 추가 정보
+      description: 스크린샷이나 기타 정보가 있다면 추가해주세요.

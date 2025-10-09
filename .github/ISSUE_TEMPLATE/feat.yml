@@ -1,0 +1,35 @@
+name: ✨ 기능 요청
+description: 새로운 기능이나 개선을 제안합니다.
+title: "[FEAT] "
+labels: ["feat"]
+body:
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: 기능 설명
+      description: 어떤 기능을 제안하나요?
+      placeholder: "예: 새로운 컴포넌트 추가, 라우팅 기능 개선"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_value
+    attributes:
+      label: 사용자 가치
+      description: 이 기능이 왜 필요한가요?
+      placeholder: "예: 사용자 경험 개선, 개발 효율성 향상"
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_ideas
+    attributes:
+      label: 구현 아이디어
+      description: 어떻게 구현하면 좋을까요?
+      placeholder: "예: React Router 사용, 커스텀 훅 활용"
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 추가 정보
+      description: 기타 참고사항이나 링크가 있다면 추가해주세요.

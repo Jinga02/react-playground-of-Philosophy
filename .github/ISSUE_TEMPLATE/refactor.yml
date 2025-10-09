@@ -1,0 +1,42 @@
+name: 🔧 리팩토링
+description: 코드 구조 개선을 제안합니다.
+title: "[REFACTOR] "
+labels: ["refactor"]
+body:
+  - type: textarea
+    id: refactor_description
+    attributes:
+      label: 리팩토링 설명
+      description: 어떤 코드를 어떻게 개선하고 싶나요?
+      placeholder: "예: 컴포넌트 분리, 함수 추출"
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement_goals
+    attributes:
+      label: 개선 목표
+      description: 이 리팩토링을 통해 무엇을 달성하고 싶나요?
+      placeholder: "예: 코드 가독성 향상, 재사용성 개선"
+    validations:
+      required: true
+
+  - type: textarea
+    id: related_files
+    attributes:
+      label: 관련 파일
+      description: 리팩토링하고자 하는 파일을 알려주세요.
+      placeholder: "예: src/components/Button.tsx"
+
+  - type: textarea
+    id: current_problems
+    attributes:
+      label: 현재 문제점
+      description: 현재 코드의 문제점을 설명해주세요.
+      placeholder: "예: 코드 중복, 복잡한 로직"
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 추가 정보
+      description: 기타 참고사항이나 아이디어가 있다면 추가해주세요.

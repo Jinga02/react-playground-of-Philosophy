@@ -1,0 +1,35 @@
+name: 📚 문서 개선
+description: 문서나 README 개선을 제안합니다.
+title: "[DOCS] "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: doc_improvement
+    attributes:
+      label: 문서 개선 설명
+      description: 어떤 문서를 어떻게 개선하고 싶나요?
+      placeholder: "예: README에 설치 방법 추가"
+    validations:
+      required: true
+
+  - type: textarea
+    id: improvement_goals
+    attributes:
+      label: 개선 목표
+      description: 이 개선을 통해 무엇을 달성하고 싶나요?
+      placeholder: "예: 사용자가 쉽게 프로젝트를 이해할 수 있도록"
+    validations:
+      required: true
+
+  - type: textarea
+    id: related_files
+    attributes:
+      label: 관련 파일
+      description: 개선하고자 하는 파일이나 섹션을 알려주세요.
+      placeholder: "예: README.md, docs/ 폴더"
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 추가 정보
+      description: 참고 자료나 기타 정보가 있다면 추가해주세요.

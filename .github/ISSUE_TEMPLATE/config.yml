@@ -1,0 +1,22 @@
+blank_issues_enabled: false
+issue_templates:
+  - name: "✨ 기능 요청"
+    description: "새로운 기능이나 개선을 제안합니다."
+    title: "[FEAT] "
+    labels: ["feat"]
+    body: "feat.yml"
+  - name: "🐛 버그 리포트"
+    description: "버그를 발견했을 때 사용합니다."
+    title: "[BUG] "
+    labels: ["bug"]
+    body: "bug.yml"
+  - name: "📚 문서 개선"
+    description: "문서나 README 개선을 제안합니다."
+    title: "[DOCS] "
+    labels: ["documentation"]
+    body: "documentation.yml"
+  - name: "🔧 리팩토링"
+    description: "코드 구조 개선을 제안합니다."
+    title: "[REFACTOR] "
+    labels: ["refactor"]
+    body: "refactor.yml"
